@@ -61,14 +61,14 @@ Expected Output:
     "PIPELINE FINISHED SUCCESSFULLY"
 
 
-#MLOps Features
-##1. Experiment Tracking
+# MLOps Features
+## 1. Experiment Tracking
 
 We use Weights & Biases to log metrics (rule_count, lift) for every run, allowing us to compare how hyperparameters like min_support affect model performance.
-##2. Model Registry
+## 2. Model Registry
 
 Every successful training run saves the rules_model.pkl to W&B Artifacts. This ensures Data Lineage—we can trace exactly which code and data produced the deployed model.
-##3. Deployment
+## 3. Deployment
 
 The model is served via a REST API using FastAPI.
 
